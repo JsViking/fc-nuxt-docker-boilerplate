@@ -1,0 +1,1 @@
+fc-nuxt-docker-boilerplate
