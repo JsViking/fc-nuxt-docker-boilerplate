@@ -1,0 +1,11 @@
+FROM node:10
+
+RUN mkdir -p /src/app
+WORKDIR /src
+COPY app/package.json /src
+COPY run-prod.sh /src
+RUN npm install
+RUN npm install pm2@next -g
+RUN pm2 update
+RUN chmod 777 ./run-prod.sh
+CMD ./run-prod.sh

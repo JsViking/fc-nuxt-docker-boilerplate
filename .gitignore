@@ -1,0 +1,13 @@
+# dependencies
+app/node_modules
+
+# logs
+app/npm-debug.log
+
+# Nuxt build
+app/.nuxt
+
+# Nuxt generate
+app/dist
+
+.DS_Store
